@@ -1,0 +1,16 @@
+githug设置主机信任：
+
+	1、终端：
+	    shh-keygen(1\生成秘钥文件（秘钥地址）,2\设置密码,3\重复密码)
+	    cd .ssh (切换到密钥文件地址   id_rsa(私钥),id_rsa.pub(公钥))
+	    cat id_rsa.pub 查看公钥内容并复制 --> 打开githug
+
+
+	2、githug:
+		点击 settings  --> 点击 SSH and GPG keys -->  点击 New SSH key  -->
+		随便添加title,将公钥复制进Key，点击Add SSH key
+
+		找到项目，clone 项目 Use SSH地址（Clone with SSH）
+
+	3、终端：
+	git clone SSH地址  --> yes  -->  clone完成
